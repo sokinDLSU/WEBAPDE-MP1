@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Krusty Krab | Database</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="cssFiles/style.css">
+        <link rel="stylesheet" href="cssFiles/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="cssFiles/c3.css" type="text/css">
+        <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+        <script src="javascripts/c3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
+        <script src="javascripts/table.js"></script>
+        
+            <div class="header-main-container">
+                <img src="images/logo.png" class="logo-header">
+                <a href="dashboard.html"><span title="You can view all the information about your Sales here Mr Krabs!"><button class="header-buttons">Dashboard</button></span></a>
+                <button class="header-buttons">View Data 
+                    <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    <div class="header-buttons-content">
+                        <span title="Upload Sales Today"><a href="uploaddata.html"><p class="header-button-content-row">Upload Data</p></a></span>
+                        <span title="This is where all your Sales logs are stored Mr Krabs!"><a href="viewalldata.html"><p class="header-button-content-row">View All Data</p></a></span>
+                        <span title="This is where you can Search for certain logs Mr Krabs!"><a href="searchdata.html"><p class="header-button-content-row">Search Data</p></a>
+                    </div>
+                <a href="logout.html"><button class="header-logout">Logout</button></a>
+            </div>
+            </div>
+        <script>
+            $(document).ready(function(){
+                 $.getJSON( "krustykrab.json", function( data ) {
+                    var sales_data = '';
+                    $.each(data, function(key, value){
+                        sales_data += '<tr>';
+                        sales_data += '<td>' + value.datetime + '</td>';
+                        sales_data += '<td>' + value.burger + '</td>';
+                        sales_data += '<td>' + value.species + '</td>';
+                        sales_data += '</tr>'; 
+                    });
+                     $('#saless_table').append(sales_data);
+                 });
+                
+               
+            });
+            
+            
+            
+        </script>
+        
+        
+        </div>
+    </head>
+    <body class="bg2">
+        <div class="body-main2-container">
+            <div class="body-table-container">
+                <table class="table table-bordered table-striped" id="saless_table">
+                    <tr>
+                        <th>Date/Time</th>
+                        <th>Burger</th>
+                        <th>Species</th>
+                    </tr>
+                    
+                    
+                    </table>
+        </div>
+        </div>
+        <div class="footer-main-container">
+        
+        
+        
+        </div>
+    </body>
+</html>

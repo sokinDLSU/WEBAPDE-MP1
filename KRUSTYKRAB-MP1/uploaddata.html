@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Krusty Krab | Upload Data</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="cssFiles/style.css">
+        <link rel="stylesheet" href="cssFiles/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="cssFiles/c3.css" type="text/css">
+        <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+        <script src="javascripts/c3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
+        <script src="javascripts/table.js"></script>
+        
+            <div class="header-main-container">
+                <img src="images/logo.png" class="logo-header">
+                <a href="dashboard.html"><span title="You can view all the information about your Sales here Mr Krabs!"><button class="header-buttons">Dashboard</button></span></a>
+                <button class="header-buttons">View Data 
+                    <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    <div class="header-buttons-content">
+                        <span title="Upload Sales Today"><a href="uploaddata.html"><p class="header-button-content-row">Upload Data</p></a></span>
+                        <span title="This is where all your Sales logs are stored Mr Krabs!"><a href="viewalldata.html"><p class="header-button-content-row">View All Data</p></a></span>
+                        <span title="This is where you can Search for certain logs Mr Krabs!"><a href="searchdata.html"><p class="header-button-content-row">Search Data</p></a>
+                    </div>
+                <a href="logout.html"><button class="header-logout">Logout</button></a>
+            </div>
+            </div>
+        
+
+	<script>
+
+	$(document).ready(function(){
+  		$("form").submit(function(){
+    			alert("Data Uploaded");
+  		});
+	});
+        </script>
+        
+        </div>
+    </head>
+    <body class="bg2">
+        <div class="body-main2-container">
+            <div class="upload-main-container">
+            <form>
+                <div class="register-text">Timestamp</div>
+                <input type="date" class="register-form-date">
+                <div class="register-text">Burger</div>
+                <select id="burger" class="register-form">
+                  <option value="0">Krabby Pattie</option>
+                  <option value="1">Krusty Deluxe</option>
+                  <option value="2">Krusty Combo</option>  
+                </select>
+                <div class="register-text">Species</div>
+                <select id="species" class="register-form">
+                  <option value="0">Turtle</option>
+                  <option value="1">Salmon</option>
+                  <option value="2">Sea Horse</option>
+                  <option value="3">Coral</option>
+                  <option value="4">Giant Clam</option>
+                  <option value="5">Gray Whale</option> 
+                  <option value="6">Sea Lion</option>
+                </select>
+            <div class="login-buttons-container">
+                    <a href="viewalldata.html"><button class="upload-button">Submit</button></a>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="footer-main-container">
+        
+        
+        
+        </div>
+    </body>
+</html>

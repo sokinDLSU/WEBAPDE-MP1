@@ -1,0 +1,383 @@
+@font-face {
+  font-family: Krabby;
+  src: url(../fonts/Krabby.ttf);
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body{
+    background-image: url(../images/bg.png);
+}
+
+.bg1{
+    background-image: url(../images/bg2.jpg)
+}
+
+.bg2{
+    background-image: url(../images/bg1.jpg)
+}
+login-border{
+    
+}
+
+
+#chart, #chart1, #turtle, #salmon ,#seahorse, #coral, #giantclam, #graywhale, #sealion {
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.logo-header{
+    height: 200%;
+    background-image: url(../images/hoyka.jpg);
+    border-radius: 50%;
+     border-bottom: 10px solid #663300;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+}
+
+
+
+.header-main-container{
+    width: 100%;
+    height: 8%;
+    background-image: url(../images/hoyka.jpg);
+    border-bottom: 10px solid #663300;
+}
+
+.header-buttons{
+    height: 70%;
+    margin-left: 2%;
+    margin-top: -3%;
+    font-family: Krabby;
+    color: #BF3D2E;
+    font-size: 30px;
+    background-color: transparent;
+    border: 3px solid #663300;
+    background-color: rgba(210,105,30, 0.4);
+    display: inline-block;
+    position: relative;
+}
+
+.glyphicon.glyphicon-triangle-bottom{
+    font-size: 25px;
+    color: #BF3D2E;
+}
+
+.header-buttons-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 192px;
+    font-size: 25px;
+  margin-left: -6%;
+    padding-right: 3px;
+    background-image: url(../images/hoyka.jpg);
+    border: 3px solid #663300;
+  z-index: 1;
+    color: #BF3D2E;
+    text-decoration: none;
+}
+
+.header-button-content-row{
+    text-decoration: none;
+    color: #BF3D2E;
+}
+
+.header-button-content-row:hover{
+    background-color: rgba(210,105,30, 0.4);
+    padding-left: 5%;
+    text-decoration: none;
+    color: #BF3D2E;
+}
+
+
+.header-buttons:hover .header-buttons-content {
+   display: block;
+    text-decoration: none;
+}
+
+
+.header-logout{
+    margin-left: 90%;
+    margin-top: -6.5%;
+    font-family: Krabby;
+    color: #BF3D2E;
+    font-size: 30px;
+    background-color: transparent;
+    border: 3px solid #663300;
+    background-color: rgba(210,105,30, 0.4);
+}
+
+.header-logout:hover{
+   background-color: rgba(210,105,30, 0); 
+}
+
+.body-main-container{
+    width: 100%;
+    height: 83%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    z-index: 0;
+    overflow-y: scroll;
+}
+
+.body-main2-container{
+    width: 100%;
+    height: 83%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    z-index: 0;
+    overflow-y: scroll;
+}
+
+.body-table-container{
+    width:70%;
+    margin-left: 20%;
+    height: 50%;
+    padding-top: 1%;
+    
+}
+
+#myinput{
+    font-size: 20px;
+    height: 30px;
+    margin-top: 0.7%;
+}
+
+.body-search-container{
+    margin-left: 20%;
+    width: 70%;
+    margin-top: 1%;
+}
+
+.filter{
+    color: black;
+    background-color: white;
+    margin-right: -0.2%;
+    padding-bottom: 0.4%;
+    font-size: 20px;
+    font-family: Calibri;
+    border-radius: 10%;
+    
+}
+
+.body-inner-container{
+    margin-left: 7%;
+}
+
+.body-chart1-container, .body-chart3-container{
+    margin-top: 2%;
+    width: 30%;
+    border: 2px solid black;
+    float: left;
+    margin-left: 1%;
+    border-image: url(../images/coach-bamboo.jpg) 5 round;
+    
+}
+
+.body-chart2-container, .body-chart4-container{
+    margin-top: 2%;
+    width: 30%;
+    margin-left: 5%;
+    border: 2px solid black;
+    border-image: url(../images/coach-bamboo.jpg) 5 round;
+    float: left;
+}
+
+
+.footer-main-container{
+    width: 100%;
+    height: 9%;
+    background-image: url(../images/hoyka.jpg);
+    border-top: 10px solid #663300;
+}
+
+.login-main-container{
+    width: 25%;
+    height: 38%;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 10px solid transparent;
+    border-image: url(../images/coach-bamboo.jpg) 30 round;
+    display: block;
+}
+
+.link{
+    color: #BF3D2E;
+}
+
+.link:hover{
+    color: #d66053;
+}
+
+.register{
+    color: white;
+    width: 300%;
+    margin-left: 110%;
+    font-size: 20px;
+    font-family: Krabby;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.register-main-container{
+    width: 25%;
+    height: 43%;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 10px solid transparent;
+    border-image: url(../images/coach-bamboo.jpg) 30 round;
+    display: block;
+}
+
+.upload-main-container{
+    width: 25%;
+    height: 36%;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 10px solid transparent;
+    border-image: url(../images/coach-bamboo.jpg) 30 round;
+    display: block;
+}
+
+.login-credentials-container{
+    width: 25%;
+    height: 35%;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+    margin: auto;
+    margin-left: 5%;
+    background-color: transparent;
+    margin-top: 35%;
+    display: block;
+}
+
+.login-header{
+    font-family: Krabby;
+    font-size: 50px;
+    color: lightcoral;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+.login-logo{
+    margin-top: -5%;
+    height: 50%;
+}
+
+.login-text{
+    font-family: Krabby;
+    font-size: 30px;
+    color: #BF3D2E;
+}
+
+.login-buttons:hover , .submit-button:hover{
+    color: #d66053;
+}
+
+.register-text-head{
+    font-family: Krabby;
+    color: #BF3D2E;
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-decoration: underline;
+}
+
+.register-text{
+    font-family: Krabby;
+    color: #BF3D2E;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.register-form{
+    margin-left: 5%;
+    font-size: 15px;
+}
+
+.register-form-date{
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.logout-text{
+    font-family: Krabby;
+    font-size: 30px;
+    color: #BF3D2E;
+    margin-left: 13%;
+}
+
+.login-forms{
+    width: 350%;
+    font-size: 15px;
+    font-family: Calibri; 
+}
+
+
+.login-buttons-container{
+    margin-top: 5%;
+    display: flex;
+}
+
+.login-buttons{
+    font-size: 50px;
+    height: 50px;
+    font-family: krabby;
+    background-color: transparent;
+    border: transparent;
+    color: #BF3D2E;
+    margin-left: 200%;
+}
+
+.submit-button{
+    font-size: 50px;
+    height: 50px;
+    font-family: krabby;
+    background-color: transparent;
+    border: transparent;
+    color: #BF3D2E;
+    margin-left: 170%;
+}
+
+.upload-button{
+    font-size: 50px;
+    height: 50px;
+    font-family: krabby;
+    background-color: transparent;
+    border: transparent;
+    color: #BF3D2E;
+    margin-left: 160%;
+}
+
+.login-buttons2{
+    font-size: 50px;
+    height: 50px;
+    font-family: krabby;
+    background-color: transparent;
+    border: transparent;
+    color: #BF3D2E;
+    margin-left: 40%;
+}
